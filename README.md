@@ -1,6 +1,6 @@
 # La Boulangerie
 
-Very minimalistic shop using ReactJS, redux, react-router and a pinch of react-css-tansition-group.
+Very minimalist shop using ReactJS, redux, react-router and a pinch of react-css-tansition-group.
 
 ## Demo
 http://boulangerie.s3-website-us-east-1.amazonaws.com
