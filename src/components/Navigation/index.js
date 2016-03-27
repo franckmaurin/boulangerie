@@ -35,7 +35,7 @@ class Navigation extends React.Component {
             </Link>
           </li>
           <li className="navigation-item navigation-item--right">
-            <a className="navigation-link" target="_blank" href="https://github.com/franckmaurin/">
+            <a className="navigation-link" target="_blank" href="https://github.com/franckmaurin/boulangerie">
               <svg><use xlinkHref="/assets/images/sprite.svg#github"/></svg>
               <span className="navigation-label">Code</span>
             </a>
