@@ -33,7 +33,7 @@ export default function configureStore() {
   function localStorageMiddleware({getState}) {
     return (next) => (action) => {
       const result = next(action);
-      if(typeof localstorage !== 'undefined') {
+      if(typeof localStorage === 'object') {
         localStorage.setItem('redux', JSON.stringify(
           getState()
         ));
