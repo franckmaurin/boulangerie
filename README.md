@@ -17,5 +17,5 @@ open http://localhost:8080/
 ```
 
 ## Thanks
-...Header icons was designed by [Victor Erixon](https://dribbble.com/victorerixon)
-...Food icons was designed by [Freepik](http://www.freepik.com/free-photos-vectors/food)
+* Header icons was designed by [Victor Erixon](https://dribbble.com/victorerixon)
+* Food icons was designed by [Freepik](http://www.freepik.com/free-photos-vectors/food)
