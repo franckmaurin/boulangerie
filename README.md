@@ -3,11 +3,11 @@
 Very minimalistic shop using ReactJS, redux, react-router and a pinch of react-css-tansition-group.
 
 ## Demo
-(http://boulangerie.s3-website-us-east-1.amazonaws.com)
+http://boulangerie.s3-website-us-east-1.amazonaws.com
 
 ## Install
 ```
-git clone https://github.com/reactjs/redux.git
+git clone https://github.com/franckmaurin/boulangerie.git
 
 cd redux
 npm install
