@@ -1,0 +1,94 @@
+/**
+ * Transitions between page load
+ * ---
+ * 0.00s -> transition--leave
+ * 0.01s -> transition--leave.is-active
+ *       -> fadeout 0ms.
+ * ---
+ * 0.00s -> transition--enter
+ * 0.01s -> transition--enter.is-active
+ *       -> fadein 0ms
+ *       -> animate dom element
+ * 0.50s -> finished
+ */
+
+/* force scrollbar to avoid ugly moove during transition */
+html {
+  overflow-y: scroll; }
+
+/**
+ * Generic
+ */
+.transition--enter,
+.transition--leave.is-active {
+  opacity: 0; }
+.transition--leave,
+.transition--enter.is-active {
+  opacity: 1; }
+
+/**
+ * Shop
+ */
+.transition--enter .shop-header svg {
+  transform: translate3d(0, 100px, 0);
+  opacity: 0; }
+.transition--enter.is-active .shop-header svg {
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+  transform: translate3d(0, 0, 0) rotate(0);
+  opacity: 1; }
+
+.transition--enter .shop-title {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0; }
+.transition--enter.is-active .shop-title {
+  transition: transform .3s .25s ease-in-out, opacity .3s .25s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+
+.transition--enter .shop-subtitle,
+.transition--enter .shop-list {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0; }
+.transition--enter.is-active .shop-subtitle,
+.transition--enter.is-active .shop-list {
+  transition: transform .25s .35s ease-in-out, opacity .25s .35s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+
+/**
+ * Form
+ */
+.transition--enter .createForm-title {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0; }
+.transition--enter.is-active .createForm-title {
+  transition: transform .25s ease-in-out, opacity .25s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+.transition--enter .form-item {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0; }
+.transition--enter.is-active .form-item--title {
+  transition: transform .25s .15s ease-in-out, opacity .25s .15s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+.transition--enter.is-active .form-item--cover {
+  transition: transform .25s .3s ease-in-out, opacity .25s .3s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+.transition--enter.is-active .form-item--price,
+.transition--enter.is-active .form-item--submit {
+  transition: transform .15s .4s ease-in-out, opacity .15s .4s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }
+
+/**
+ * Cart
+ */
+.transition--enter .cart {
+  transform: translate3d(0, 50px, 0);
+  opacity: 0; }
+.transition--enter.is-active .cart {
+  transition: transform .35s ease-in-out, opacity .35s ease-in-out;
+  transform: translate3d(0, 0, 0);
+  opacity: 1; }

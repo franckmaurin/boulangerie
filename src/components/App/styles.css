@@ -1,0 +1,6 @@
+html {
+  background-color: var(--background); }
+  body {
+    max-width: 1024px;
+    margin: 0 auto;
+    padding-top: 62px; }

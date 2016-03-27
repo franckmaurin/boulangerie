@@ -1,0 +1,90 @@
+.shop {
+  padding: 60px 0; }
+  .shop-header {
+    margin-bottom: 80px; }
+    .shop-header svg {
+      width: 110px;
+      height: 110px; }
+
+  .shop-list {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1024px; }
+    .shop-list:after {
+      content: "";
+      display: block;
+      width: 32%;
+      height: 0; }
+    .shop-item {
+      position: relative;
+      display: block;
+      width: 32%;
+      margin-bottom: 25px;
+      border: solid 3px black;
+      background: white;
+      border-radius: 8px; }
+      .shop-item:after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        top: 7px;
+        right: -10px;
+        bottom: -10px;
+        left: 7px;
+        border-radius: 10px;
+        background: url("../../assets/images/pattern.svg") repeat bottom right; }
+      .shop-item .product {
+        text-align: left;
+        position: relative; }
+        .shop-item .product-cover {
+          display: block;
+          width: 100%;
+          padding-top: 66%;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5px 5px 0 0;
+          transition: opacity .2s ease-in-out; }
+        .shop-item .product-info {
+          position: relative;
+          padding: 5%; }
+          .shop-item .product-title {
+            margin: 0 60px 10px 0; }
+          .shop-item .product-price {
+            display: block;
+            color: var(--blue); }
+          .shop-item-btn {
+            position: absolute;
+            top: -25px;
+            right: 4%;
+            margin-top: 66%;}
+          .typo-btn--rounded--clone {
+            position: fixed;
+            margin: 0;
+            z-index: 99;
+            transition: transform .5s ease-in-out, opacity .2s .3s linear, background-color .5s linear; }
+
+@media (max-width: 1024px) {
+  .shop-list {
+    padding: 0 20px; }
+  .shop-item-btn {
+    opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .shop-item {
+    width: 48%; }
+}
+
+@media (max-width: 460px) {
+  .shop {
+    padding: 40px 0 0; }
+    .shop-header {
+      margin-bottom: 50px; }
+    .shop-item {
+      width: 100%; }
+}

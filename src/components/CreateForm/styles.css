@@ -1,0 +1,91 @@
+.createForm {
+  min-height: 100vh;
+  padding: 60px 20px 20px;
+  position: relative;
+  z-index: 10;
+  transition: transform .25s ease-in-out, opacity .25s ease-in-out; }
+  .createForm .inner {
+    margin: 0 auto;
+    max-width: 600px;
+    position: relative; }
+    .createForm h2 {
+      margin-bottom: 20px; }
+    .createForm-msg {
+      margin-bottom: 20px;
+      font-weight: bold;
+      display: none; }
+    .createForm-msg--valid {
+      color: var(--blue); }
+    .createForm-msg--error {
+      color: var(--red); }
+    .createForm--error .createForm-msg--error,
+    .createForm--valid .createForm-msg--valid {
+      display: block; }
+    .createForm .form {}
+      .form-item {
+        text-align: left;
+        position: relative; }
+        .form-input {
+          position: relative;
+          margin-bottom: 3rem; }
+          .form-input input, .form-input button {
+            margin: 0;
+            border: solid 3px black;
+            padding: 10px 15px;
+            font: 13px/1.8 var(--fontMonospace);
+            background: white;
+            border-radius: 8px;
+            width: 100%;
+            outline: none; }
+          .form-input:after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 7px;
+            right: -7px;
+            bottom: -7px;
+            left: 7px;
+            border-radius: 10px;
+            background: url("../../assets/images/pattern.svg") repeat bottom right; }
+          .form-input input:focus {
+            border-color: var(--blue); }
+
+        /* Prices */
+        .form-item--price .form-prepend {
+          text-align: center;
+          width: 50px;
+          padding: 13px 0;
+          font: bold 13px/1.8 var(--fontMonospace);
+          background-color: black;
+          color: white;
+          display: block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          border-radius: 8px 0 0 8px; }
+        .form-item--price .form-input {
+          padding-left: 47px; }
+          .form-item--price .form-input input {
+            border-radius: 0 8px 8px 0; }
+
+        /* Error */
+        .form-item--error label {
+          color: var(--red); }
+        .form-item--error .form-prepend {
+          background: var(--red); }
+        .form-item--error .form-input input {
+          border-color: var(--red); }
+
+        /* Submit */
+        .form-item--submit {
+            text-align: right; }
+          .form-item--submit .form-input {
+            display: inline-block; }
+            .form-item--submit .form-input button {
+              font-weight: bold;
+              width: auto;
+              padding: 10px 25px;
+              background-color: var(--btnBgColor);
+              color: var(--btnColor); }
+            .form-item--submit .form-input:after {
+              display: none; }

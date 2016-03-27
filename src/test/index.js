@@ -1,0 +1,11 @@
+import '../actions/test';
+import '../reducers/test';
+import '../components/Shop/test';
+import '../components/ShopList/test';
+import '../components/ShopItem/test';
+import '../components/Cart/test';
+import '../components/CartList/test';
+import '../components/CartItem/test';
+import '../components/Product/test';
+import '../components/CreateForm/test';
+import '../components/Navigation/test';

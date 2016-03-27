@@ -1,0 +1,78 @@
+.cart {
+  padding: 60px 0;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1; }
+  .cart-inner {
+    position: relative;
+    border: solid 3px black;
+    margin: 0 auto;
+    padding: 40px;
+    background: white;
+    border-radius: 8px;
+    width: auto;
+    max-width: 600px; }
+  .cart-inner--empty {
+    line-height: 20vh; }
+    .cart-inner:after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 7px;
+      right: -10px;
+      bottom: -10px;
+      left: 7px;
+      border-radius: 10px;
+      background: url("../../assets/images/pattern.svg") repeat bottom right; }
+      .cart-title {
+        margin-bottom: 40px; }
+      .cart-subtitle {
+        text-align: left;
+        position: relative;
+        padding-left: 40px;
+        margin-bottom: 20px;
+        color: var(--gray); }
+      .cart-subtitle span:nth-child(1){
+        position: absolute;
+        left: 0; }
+      .cart-subtitle span:nth-child(3){
+        position: absolute;
+        right: 0; }
+      .cart-list {
+        text-align: left; }
+        .cart-item {
+          padding: 20px 0 20px 40px;
+          background: url("../../assets/images/pattern.svg") repeat-x 0 -3px; }
+          .cart-item .product-info {
+            position: relative; }
+            .cart-item .product-title {
+              margin: 0 80px 5px 0; }
+            .cart-item .product-price {
+              color: var(--blue);
+              position: absolute;
+              top: 4px;
+              right: 0; }
+            .cart-item .product-quantity {
+              color: var(--gray);
+              position: absolute;
+              top: -2px;
+              left: -40px;
+              width: 35px;
+              text-align: right; }
+              .cart-item .product-quantity:after {
+                content: ' x';
+                color: var(--gray); }
+      .cart-footer {
+        text-align: right;
+        padding: 20px 0 20px 40px;
+        background: url("../../assets/images/pattern.svg") repeat-x 0 -3px;
+        color: var(--blue); }
+        .cart-footer .typo-small {
+          color: var(--gray); }
+
+@media (max-width: 640px) {
+  .cart {
+    padding: 40px 20px; }
+    .cart-inner {
+      padding: 20px; }
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1458988515400,
+    "title": "Baguette",
+    "price": 1.20,
+    "cover": "/assets/images/baguette.png"
+  },
+  {
+    "id": 1458988515401,
+    "title": "Pain de campagne",
+    "price": 2.49,
+    "cover": "/assets/images/pain-de-campagne.png"
+  },
+  {
+    "id": 1458988515402,
+    "title": "Brioche",
+    "price": 2.99,
+    "cover": "/assets/images/brioche.png"
+  },
+  {
+    "id": 1458988515403,
+    "title": "Croissant",
+    "price": 1.00,
+    "cover": "/assets/images/croissant.png"
+  },
+  {
+    "id": 1458988515404,
+    "title": "Cookie",
+    "price": 0.65,
+    "cover": "/assets/images/cookie.png"
+  },
+  {
+    "id": 1458988515405,
+    "title": "Donut",
+    "price": 1.80,
+    "cover": "/assets/images/donut.png"
+  }
+]

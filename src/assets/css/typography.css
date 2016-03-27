@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=PT+Sans|PT+Mono:400,700);
+
+html {
+  font-size: 62.5%;
+  -webkit-font-smoothing: antialiased;
+  text-align: center; }
+  body {
+    font: normal 1.8rem/1.8 var(--fontSansSerif); }
+    .typo-title {
+      font: normal 3rem/1.4 var(--fontSansSerif); }
+    .typo-subtitle {
+      font: normal 2.2rem/1.1 var(--fontSansSerif); }
+    .typo-small {
+      font: bold 1.4rem/1.4 var(--fontSansSerif);
+      text-transform: uppercase;
+      letter-spacing: 2px; }
+    .typo-price {
+      font: normal 1.8rem/1 var(--fontMonospace); }
+    .typo-btn {
+      border: solid 3px var(--btnBgColor);
+      padding: 10px 15px;
+      font: 1.3rem/1.8 var(--fontMonospace);
+      border-radius: 8px;
+      outline: none;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      background: var(--btnBgColor);
+      color: var(--btnColor);
+      cursor: pointer;
+      transition: background-color .2s ease-out, border-color .2s ease-out; }
+    .typo-btn--small {
+      margin-right: 5px;
+      padding: 0;
+      width: 25px;
+      height: 25px;
+      line-height: 1;
+      border-radius: 4px; }
+    .typo-btn--rounded {
+      font-size: 2rem;
+      border: none;
+      padding: 0;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%; }
+    .typo-btn:hover {
+      background-color: var(--btnBgColorHover) !important;
+      border-color: var(--btnBgColorHover) !important; }
