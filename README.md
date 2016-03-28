@@ -9,7 +9,7 @@ http://boulangerie.s3-website-us-east-1.amazonaws.com
 ```
 git clone https://github.com/franckmaurin/boulangerie.git
 
-cd redux
+cd boulangerie
 npm install
 npm start
 
