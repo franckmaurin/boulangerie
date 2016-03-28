@@ -6,7 +6,7 @@ import { selectProduct, unselectProduct } from '../../actions';
 import CartItem from '../CartItem';
 import CartList from '../CartList';
 
-class Cart extends React.Component {
+export class Cart extends React.Component {
   render() {
     // Creates an array of selected products with details
     // Calculate the total price.

@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 import _ from 'underscore';
 import { Link } from 'react-router';
 
-class Navigation extends React.Component {
+export class Navigation extends React.Component {
   render() {
     // Gets the total items in the cart
     let cartLength = 0;

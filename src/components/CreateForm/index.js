@@ -3,7 +3,7 @@ import { connect }       from 'react-redux';
 import { createProduct } from '../../actions';
 import styles            from './styles.css';
 
-class CreateForm extends React.Component {
+export class CreateForm extends React.Component {
   render() {
     let fields = {
       title: {},
@@ -84,5 +84,4 @@ class CreateForm extends React.Component {
   }
 }
 
-CreateForm = connect()(CreateForm);
-export default CreateForm;
+export default connect()(CreateForm);

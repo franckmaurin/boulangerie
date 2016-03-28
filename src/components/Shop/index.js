@@ -5,7 +5,7 @@ import { selectProduct } from '../../actions';
 import ShopItem          from '../ShopItem';
 import ShopList          from '../ShopList';
 
-class Shop extends React.Component {
+export class Shop extends React.Component {
   render() {
     return (
       <ShopList
